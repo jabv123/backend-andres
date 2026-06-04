@@ -140,4 +140,4 @@ interface ConnectedUser {
   nombre: string;
   rol: 'ADMIN' | 'BODEGUERO' | 'CONSULTOR';
 }
-```
+```# backend-andres
