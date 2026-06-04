@@ -17,6 +17,8 @@ import { TypeOrmModule } from '@nestjs/typeorm';
         entities: ['dist/**/*.entity.js'],
         synchronize: config.get('NODE_ENV') !== 'production',
         logging: config.get('NODE_ENV') === 'production',
+        ssl:
+          process.env.DB_SSL === 'true' ? { rejectUnauthorized: false } : false,
       }),
     }),
   ],
