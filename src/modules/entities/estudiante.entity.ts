@@ -17,6 +17,9 @@ export class Estudiante {
   @Column()
   edad!: number;
 
+  @Column({ default: 1124864792 })
+  identificacion!: number;
+
   @CreateDateColumn()
   creadoEn!: Date;
 
